@@ -2,13 +2,17 @@
     <!-- Impact Hero -->
     <section class="impact-hero">
         <div class="impact-hero-bg">
-            <img src="/extracted_images/image4.jpeg" alt="Impact of Roshni Care">
+            @if($videoPath = site_content('impact_hero_video'))
+                <video src="{{ asset($videoPath) }}" autoplay loop muted playsinline class="w-full h-full object-cover" style="filter: grayscale(20%);"></video>
+            @else
+                <img src="{{ asset(site_content('impact_hero_image')) }}" alt="Impact of Roshni Care">
+            @endif
             <div class="impact-overlay"></div>
         </div>
         <div class="impact-hero-content">
             <span class="impact-badge">Our Impact</span>
-            <h1 class="impact-title">Lives Changed,<br>Futures Brightened</h1>
-            <p class="impact-subtitle">Numbers tell a part of our story, but the real impact is measured in the smiles, independence, and success of the youth we support.</p>
+            <h1 class="impact-title">{!! site_content('impact_hero_title') !!}</h1>
+            <p class="impact-subtitle">{{ site_content('impact_hero_subtitle') }}</p>
         </div>
     </section>
 
@@ -16,20 +20,20 @@
     <section class="impact-stats">
         <div class="stats-container">
             <div class="stat-card">
-                <div class="stat-number">5,000+</div>
-                <div class="stat-label">Lives Touched</div>
+                <div class="stat-number">{{ site_content('impact_stat1_num') }}</div>
+                <div class="stat-label">{{ site_content('impact_stat1_label') }}</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Commitment</div>
+                <div class="stat-number">{{ site_content('impact_stat2_num') }}</div>
+                <div class="stat-label">{{ site_content('impact_stat2_label') }}</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">Programs Launched</div>
+                <div class="stat-number">{{ site_content('impact_stat3_num') }}</div>
+                <div class="stat-label">{{ site_content('impact_stat3_label') }}</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">12</div>
-                <div class="stat-label">Years of Service</div>
+                <div class="stat-number">{{ site_content('impact_stat4_num') }}</div>
+                <div class="stat-label">{{ site_content('impact_stat4_label') }}</div>
             </div>
         </div>
     </section>
@@ -38,22 +42,20 @@
     <section class="success-stories">
         <div class="stories-container">
             <div class="stories-header">
-                <h2>Voices of Hope</h2>
-                <p>Read the inspiring stories of those who have walked through our doors.</p>
+                <h2>{{ site_content('impact_stories_title') }}</h2>
+                <p>{{ site_content('impact_stories_subtitle') }}</p>
             </div>
             
             <div class="stories-grid">
                 <!-- Story 1 -->
                 <div class="story-card">
                     <div class="quote-icon"><i data-lucide="quote"></i></div>
-                    <p class="story-text">"Before coming to Roshni Care, I felt lost. The vocational training gave me not just skills, but the confidence to start my own small business. I am now independent."</p>
+                    <p class="story-text">{{ site_content('impact_story1_text') }}</p>
                     <div class="story-author">
-                        <div class="author-avatar">
-                            <i data-lucide="user"></i>
-                        </div>
+                        <div class="author-avatar"><i data-lucide="user"></i></div>
                         <div class="author-info">
-                            <h4>Ahmad S.</h4>
-                            <span>Graduate, 2023</span>
+                            <h4>{{ site_content('impact_story1_author') }}</h4>
+                            <span>{{ site_content('impact_story1_role') }}</span>
                         </div>
                     </div>
                 </div>
@@ -61,14 +63,12 @@
                 <!-- Story 2 -->
                 <div class="story-card">
                     <div class="quote-icon"><i data-lucide="quote"></i></div>
-                    <p class="story-text">"The emotional resilience workshops changed my life. I learned how to process my past and look forward to a future filled with light and opportunity."</p>
+                    <p class="story-text">{{ site_content('impact_story2_text') }}</p>
                     <div class="story-author">
-                        <div class="author-avatar">
-                            <i data-lucide="user"></i>
-                        </div>
+                        <div class="author-avatar"><i data-lucide="user"></i></div>
                         <div class="author-info">
-                            <h4>Fatima K.</h4>
-                            <span>Alumni</span>
+                            <h4>{{ site_content('impact_story2_author') }}</h4>
+                            <span>{{ site_content('impact_story2_role') }}</span>
                         </div>
                     </div>
                 </div>
@@ -76,14 +76,12 @@
                 <!-- Story 3 -->
                 <div class="story-card">
                     <div class="quote-icon"><i data-lucide="quote"></i></div>
-                    <p class="story-text">"The educators here don't just teach; they mentor. The personalized academic plan helped me secure a scholarship to university. I am forever grateful."</p>
+                    <p class="story-text">{{ site_content('impact_story3_text') }}</p>
                     <div class="story-author">
-                        <div class="author-avatar">
-                            <i data-lucide="user"></i>
-                        </div>
+                        <div class="author-avatar"><i data-lucide="user"></i></div>
                         <div class="author-info">
-                            <h4>Omar R.</h4>
-                            <span>University Student</span>
+                            <h4>{{ site_content('impact_story3_author') }}</h4>
+                            <span>{{ site_content('impact_story3_role') }}</span>
                         </div>
                     </div>
                 </div>
@@ -96,10 +94,10 @@
         <div class="gallery-container">
             <h2>Moments of Joy</h2>
             <div class="gallery-grid">
-                <div class="gallery-item"><img src="/extracted_images/image5.jpeg" alt="Gallery Image 1"></div>
-                <div class="gallery-item"><img src="/extracted_images/image6.jpeg" alt="Gallery Image 2"></div>
-                <div class="gallery-item"><img src="/extracted_images/image7.jpeg" alt="Gallery Image 3"></div>
-                <div class="gallery-item"><img src="/extracted_images/image8.jpeg" alt="Gallery Image 4"></div>
+                <div class="gallery-item"><img src="{{ asset(site_content('impact_gallery_image1')) }}" alt="Gallery Image 1"></div>
+                <div class="gallery-item"><img src="{{ asset(site_content('impact_gallery_image2')) }}" alt="Gallery Image 2"></div>
+                <div class="gallery-item"><img src="{{ asset(site_content('impact_gallery_image3')) }}" alt="Gallery Image 3"></div>
+                <div class="gallery-item"><img src="{{ asset(site_content('impact_gallery_image4')) }}" alt="Gallery Image 4"></div>
             </div>
         </div>
     </section>

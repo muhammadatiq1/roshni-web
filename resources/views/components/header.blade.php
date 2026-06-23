@@ -260,10 +260,10 @@
 
         <!-- Actions -->
         <div class="header-actions">
-            <a href="/contact" class="btn-volunteer">
+            <a href="https://api.whatsapp.com/send?phone=923206869258" class="btn-volunteer" target="_blank">
                 <i data-lucide="users" style="width: 18px; height: 18px;"></i> Volunteer
             </a>
-            <a href="/contact" class="btn-donate">
+            <a href="https://api.whatsapp.com/send?phone=923206869258" class="btn-donate" target="_blank">
                 <i data-lucide="heart" style="width: 18px; height: 18px;"></i> Donate Now
             </a>
             

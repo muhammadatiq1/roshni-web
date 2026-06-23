@@ -2,14 +2,14 @@
     <!-- About Hero Section -->
     <section class="about-hero">
         <div class="about-hero-bg">
-            <img src="/extracted_images/image9.jpeg" alt="Children playing">
+            <img src="{{ asset(site_content('about_hero_image')) }}" alt="Children playing">
             <div class="about-hero-overlay"></div>
         </div>
         
         <div class="about-hero-content">
             <span class="about-badge">Our Story</span>
-            <h1 class="about-title">Bringing Light into<br>Darkness</h1>
-            <p class="about-subtitle">Founded with a simple mission: to provide specialized care, education, and love to those who need it most.</p>
+            <h1 class="about-title">{!! site_content('about_hero_title') !!}</h1>
+            <p class="about-subtitle">{{ site_content('about_hero_subtitle') }}</p>
         </div>
     </section>
 
@@ -22,14 +22,14 @@
                         <i data-lucide="target" style="width: 32px; height: 32px;"></i>
                     </div>
                     <h3>Our Mission</h3>
-                    <p>To foster independence and academic excellence in a supportive, emotionally resilient environment.</p>
+                    <p>{{ site_content('about_mission_text') }}</p>
                 </div>
                 <div class="mission-card">
                     <div class="mission-icon">
                         <i data-lucide="eye" style="width: 32px; height: 32px;"></i>
                     </div>
                     <h3>Our Vision</h3>
-                    <p>A world where every individual, regardless of their circumstances, has the tools to succeed and shine brightly.</p>
+                    <p>{{ site_content('about_vision_text') }}</p>
                 </div>
             </div>
         </div>
@@ -39,12 +39,16 @@
     <section class="about-history">
         <div class="history-container">
             <div class="history-content">
-                <h2>How It All Began</h2>
-                <p>Roshni Care Home started as a small initiative by passionate educators and caregivers who noticed a significant gap in specialized, tactile education and emotional support for vulnerable youth.</p>
-                <p>Over the years, we have grown into a comprehensive institution that doesn't just provide shelter, but active, holistic development. Our journey is paved with the success stories of the countless lives we've touched.</p>
+                <h2>{{ site_content('about_history_title') }}</h2>
+                <p>{{ site_content('about_history_p1') }}</p>
+                <p>{{ site_content('about_history_p2') }}</p>
             </div>
             <div class="history-image">
-                <img src="/extracted_images/image10.jpeg" alt="History of Roshni Care">
+                @if($videoPath = site_content('about_history_video'))
+                    <video src="{{ asset($videoPath) }}" autoplay loop muted playsinline style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);"></video>
+                @else
+                    <img src="{{ asset(site_content('about_history_image')) }}" alt="History of Roshni Care">
+                @endif
             </div>
         </div>
     </section>

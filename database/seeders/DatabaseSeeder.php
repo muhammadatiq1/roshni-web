@@ -15,11 +15,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // 1. Create the Default Admin User
+        User::updateOrCreate(
+            ['email' => 'admin@roshnicare.com'],
+            [
+                'name' => 'Admin User',
+                'password' => bcrypt('password'), // default password
+            ]
+        );
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        // 2. Seed the Dynamic Site Content
+        $this->call([
+            SiteContentSeeder::class,
         ]);
     }
 }

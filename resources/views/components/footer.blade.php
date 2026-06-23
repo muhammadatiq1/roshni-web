@@ -240,7 +240,7 @@
         <div class="footer-cta-box" data-aos="fade-up">
             <h2 class="footer-cta-title">Empower a life today</h2>
             <p class="footer-cta-text">Your contribution provides specialized education, comprehensive hostel care, and a completely secure future for visually impaired girls.</p>
-            <a href="#donate" class="btn-footer-primary">
+            <a href="https://api.whatsapp.com/send?phone=923206869258" class="btn-footer-primary" target="_blank">
                 Support Our Mission <i data-lucide="arrow-right" style="width: 20px; height: 20px;"></i>
             </a>
             <br>
@@ -276,7 +276,7 @@
                 <h4 class="footer-col-title">Get Involved</h4>
                 <ul class="footer-nav-list">
                     <li><a href="#" class="footer-nav-link">Make a Donation</a></li>
-                    <li><a href="#" class="footer-nav-link">Become a Volunteer</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=923206869258" class="footer-nav-link" target="_blank">Become a Volunteer</a></li>
                     <li><a href="#" class="footer-nav-link">Corporate Partners</a></li>
                     <li><a href="#" class="footer-nav-link">Start a Campaign</a></li>
                 </ul>

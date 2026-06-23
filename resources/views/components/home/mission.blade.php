@@ -164,13 +164,10 @@
         <!-- Left Content -->
         <div class="mission-content" data-aos="fade-up">
             <div class="section-label">Our Story</div>
-            <h2 class="mission-headline">Dedicated to every girl's potential.</h2>
-            <p class="mission-text">
-                Roshni School is a specialized educational and residential community founded on a simple belief: visual impairment should never dictate a child's future. 
-            </p>
-            <p class="mission-text">
-                Through customized braille education, unwavering emotional support, and intensive mobility training, we create an environment where young women can shatter expectations. We don't just provide shelter; we build the foundation for lifelong independence, leadership, and joy.
-            </p>
+            <h2 class="mission-headline">{!! site_content('mission_headline', 'Dedicated to every girl\'s potential.') !!}</h2>
+            <div class="mission-text-wrapper">
+                {!! site_content('mission_description', '<p class="mission-text">Roshni School is a specialized educational and residential community founded on a simple belief: visual impairment should never dictate a child\'s future.</p><p class="mission-text">Through customized braille education, unwavering emotional support, and intensive mobility training, we create an environment where young women can shatter expectations. We don\'t just provide shelter; we build the foundation for lifelong independence, leadership, and joy.</p>') !!}
+            </div>
             <a href="#" class="btn-gold-pill">
                 Learn More About Us <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
             </a>
@@ -179,8 +176,8 @@
         <!-- Right Visual Overlaps -->
         <div class="mission-visual" data-aos="zoom-in-left" data-aos-delay="200">
             <div class="visual-glow"></div>
-            <img src="/extracted_images/image11.jpeg" alt="Care and Support" class="img-large">
-            <img src="/extracted_images/image12.jpeg" alt="Community Support" class="img-small">
+            <img src="{{ asset(site_content('mission_image_1', '/extracted_images/image11.jpeg')) }}" alt="Care and Support" class="img-large">
+            <img src="{{ asset(site_content('mission_image_2', '/extracted_images/image12.jpeg')) }}" alt="Community Support" class="img-small">
         </div>
 
     </div>

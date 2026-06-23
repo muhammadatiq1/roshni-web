@@ -172,9 +172,9 @@
             <div class="approach-label">
                 <i data-lucide="compass" style="width: 14px; height: 14px;"></i> Our Methodology
             </div>
-            <h2 class="approach-headline">A holistic model for lifelong success.</h2>
+            <h2 class="approach-headline">{!! site_content('approach_headline', 'A holistic model for lifelong success.') !!}</h2>
             <p class="approach-subheadline">
-                We don't just provide shelter. We operate a comprehensive ecosystem designed to equip visually impaired girls with the tools they need to conquer the world.
+                {!! site_content('approach_description', 'We don\'t just provide shelter. We operate a comprehensive ecosystem designed to equip visually impaired girls with the tools they need to conquer the world.') !!}
             </p>
         </div>
 

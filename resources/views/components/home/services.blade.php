@@ -194,9 +194,9 @@
             <div class="section-label-urgent">
                 <i data-lucide="bell" style="width: 16px; height: 16px;"></i> Live Appeals
             </div>
-            <h2 class="appeals-headline">Make an immediate difference.</h2>
+            <h2 class="appeals-headline">{!! site_content('appeals_headline', 'Make an immediate difference.') !!}</h2>
             <p class="appeals-subheadline">
-                Choose a specific cause to support right now. 100% of your donation goes directly towards funding these critical initiatives for our students.
+                {!! site_content('appeals_description', 'Choose a specific cause to support right now. 100% of your donation goes directly towards funding these critical initiatives for our students.') !!}
             </p>
         </div>
 
@@ -205,12 +205,12 @@
             <div class="appeal-card" data-aos="fade-up" data-aos-delay="0">
                 <div class="appeal-photo">
                     <div class="appeal-badge"><i data-lucide="target" style="width: 14px; height: 14px;"></i> Education</div>
-                    <img src="/extracted_images/image13.jpeg" alt="Education">
+                    <img src="{{ asset(site_content('appeal_1_image', '/extracted_images/image13.jpeg')) }}" alt="Education">
                 </div>
                 <div class="appeal-content">
-                    <h3 class="appeal-title">Sponsor a Student's Education</h3>
-                    <p class="appeal-text">Provide complete braille educational resources, textbooks, and tuition for one full year.</p>
-                    <a href="#donate" class="btn-appeal-donate">
+                    <h3 class="appeal-title">{!! site_content('appeal_1_title', 'Sponsor a Student\'s Education') !!}</h3>
+                    <p class="appeal-text">{!! site_content('appeal_1_description', 'Provide complete braille educational resources, textbooks, and tuition for one full year.') !!}</p>
+                    <a href="https://api.whatsapp.com/send?phone=923206869258" class="btn-appeal-donate" target="_blank">
                         Donate Now <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
                     </a>
                 </div>
@@ -220,12 +220,12 @@
             <div class="appeal-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="appeal-photo">
                     <div class="appeal-badge" style="color: #F59E0B;"><i data-lucide="home" style="width: 14px; height: 14px;"></i> Care</div>
-                    <img src="/extracted_images/image14.jpeg" alt="Hostel Care">
+                    <img src="{{ asset(site_content('appeal_2_image', '/extracted_images/image14.jpeg')) }}" alt="Hostel Care">
                 </div>
                 <div class="appeal-content">
-                    <h3 class="appeal-title">Support Secure Hostel Care</h3>
-                    <p class="appeal-text">Fund a month of safe, fully-equipped residential living, including nutritious daily meals.</p>
-                    <a href="#donate" class="btn-appeal-donate">
+                    <h3 class="appeal-title">{!! site_content('appeal_2_title', 'Support Secure Hostel Care') !!}</h3>
+                    <p class="appeal-text">{!! site_content('appeal_2_description', 'Fund a month of safe, fully-equipped residential living, including nutritious daily meals.') !!}</p>
+                    <a href="https://api.whatsapp.com/send?phone=923206869258" class="btn-appeal-donate" target="_blank">
                         Donate Now <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
                     </a>
                 </div>
@@ -235,12 +235,12 @@
             <div class="appeal-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="appeal-photo">
                     <div class="appeal-badge" style="color: #E61919;"><i data-lucide="navigation" style="width: 14px; height: 14px;"></i> Training</div>
-                    <img src="/extracted_images/image15.jpeg" alt="Mobility">
+                    <img src="{{ asset(site_content('appeal_3_image', '/extracted_images/image15.jpeg')) }}" alt="Mobility">
                 </div>
                 <div class="appeal-content">
-                    <h3 class="appeal-title">Mobility Independence Kit</h3>
-                    <p class="appeal-text">Equip a student with a professional white cane and comprehensive navigational training.</p>
-                    <a href="#donate" class="btn-appeal-donate">
+                    <h3 class="appeal-title">{!! site_content('appeal_3_title', 'Mobility Independence Kit') !!}</h3>
+                    <p class="appeal-text">{!! site_content('appeal_3_description', 'Equip a student with a professional white cane and comprehensive navigational training.') !!}</p>
+                    <a href="https://api.whatsapp.com/send?phone=923206869258" class="btn-appeal-donate" target="_blank">
                         Donate Now <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
                     </a>
                 </div>
@@ -250,12 +250,12 @@
             <div class="appeal-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="appeal-photo">
                     <div class="appeal-badge"><i data-lucide="heart" style="width: 14px; height: 14px;"></i> General</div>
-                    <img src="/extracted_images/image16.jpeg" alt="General Fund">
+                    <img src="{{ asset(site_content('appeal_4_image', '/extracted_images/image16.jpeg')) }}" alt="General Fund">
                 </div>
                 <div class="appeal-content">
-                    <h3 class="appeal-title">General Welfare Fund</h3>
-                    <p class="appeal-text">Allow us to allocate your donation to the most urgent requirements of the care home today.</p>
-                    <a href="#donate" class="btn-appeal-donate">
+                    <h3 class="appeal-title">{!! site_content('appeal_4_title', 'General Welfare Fund') !!}</h3>
+                    <p class="appeal-text">{!! site_content('appeal_4_description', 'Allow us to allocate your donation to the most urgent requirements of the care home today.') !!}</p>
+                    <a href="https://api.whatsapp.com/send?phone=923206869258" class="btn-appeal-donate" target="_blank">
                         Donate Now <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
                     </a>
                 </div>

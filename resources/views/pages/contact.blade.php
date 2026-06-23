@@ -22,7 +22,7 @@
                         <div class="info-icon"><i data-lucide="map-pin"></i></div>
                         <div>
                             <h4>Visit Us</h4>
-                            <p>123 Hope Avenue, Education District<br>Cityville, State 12345</p>
+                            <p>Roshni Quran academy.<br>469 A.<br>Block N.<br>Samnabad<br>Lahore</p>
                         </div>
                     </div>
                     
@@ -30,7 +30,7 @@
                         <div class="info-icon"><i data-lucide="phone"></i></div>
                         <div>
                             <h4>Call Us</h4>
-                            <p>+1 (555) 123-4567<br>Mon-Fri, 9am - 5pm</p>
+                            <p>+92320 6869258<br>+923224098062</p>
                         </div>
                     </div>
                     
@@ -38,7 +38,7 @@
                         <div class="info-icon"><i data-lucide="mail"></i></div>
                         <div>
                             <h4>Email Us</h4>
-                            <p>hello@roshnicare.org<br>volunteer@roshnicare.org</p>
+                            <p><a href="mailto:info@roshnicarehome.com" class="hover:text-green-700 transition-colors">info@roshnicarehome.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -47,19 +47,27 @@
                     <div class="involve-card volunteer-card">
                         <h3>Become a Volunteer</h3>
                         <p>Join our community of dedicated educators and support staff.</p>
-                        <a href="#volunteer-form" class="involve-link">Apply Now <i data-lucide="arrow-right"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=923206869258" class="involve-link" target="_blank">Apply Now <i data-lucide="arrow-right"></i></a>
                     </div>
                     <div class="involve-card donate-card">
                         <h3>Make a Donation</h3>
                         <p>Your contribution directly supports our specialized programs.</p>
-                        <a href="#donate-now" class="involve-link">Donate <i data-lucide="arrow-right"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=923206869258" class="involve-link" target="_blank">Donate <i data-lucide="arrow-right"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Right Form Panel -->
             <div class="contact-form-wrapper">
-                <form class="contact-form" action="#" method="POST">
+                @if(session('success'))
+                    <div style="background-color: #DEF7EC; color: #03543F; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; font-family: 'Inter', sans-serif;">
+                        <i data-lucide="check-circle" style="display: inline-block; vertical-align: middle; margin-right: 0.5rem; width: 20px; height: 20px;"></i>
+                        {{ session('success') }}
+                    </div>
+                @endif
+                
+                <form class="contact-form" action="{{ route('contact.store') }}" method="POST">
+                    @csrf
                     <h3>Send us a Message</h3>
                     
                     <div class="form-group">

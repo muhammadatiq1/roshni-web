@@ -135,10 +135,10 @@
             Join thousands of donors who are actively breaking down barriers and building a world of independence for visually impaired girls. Your support starts today.
         </p>
         <div class="cta-actions">
-            <a href="#donate" class="btn-cta-primary">
+            <a href="https://api.whatsapp.com/send?phone=923206869258" class="btn-cta-primary" target="_blank">
                 <i data-lucide="heart" style="width: 20px; height: 20px;"></i> Donate Now
             </a>
-            <a href="#volunteer" class="btn-cta-secondary">
+            <a href="https://api.whatsapp.com/send?phone=923206869258" class="btn-cta-secondary" target="_blank">
                 <i data-lucide="users" style="width: 20px; height: 20px;"></i> Become a Volunteer
             </a>
         </div>

@@ -297,11 +297,11 @@
             <div class="hero-label">
                 <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Registered NGO
             </div>
-            <h1 class="hero-headline">Empowering visually impaired girls to build <span>their future.</span></h1>
-            <p class="hero-subheadline">Through specialized braille education, secure hostel care, and mobility training, we provide the foundation for lifelong independence and confidence.</p>
+            <h1 class="hero-headline">{!! site_content('hero_headline', 'Empowering visually impaired girls to build <span>their future.</span>') !!}</h1>
+            <p class="hero-subheadline">{!! site_content('hero_description', 'Through specialized braille education, secure hostel care, and mobility training, we provide the foundation for lifelong independence and confidence.') !!}</p>
             
             <div class="hero-actions">
-                <a href="#donate" class="btn-hero-primary">
+                <a href="https://api.whatsapp.com/send?phone=923206869258" class="btn-hero-primary" target="_blank">
                     Donate Now <i data-lucide="heart" style="width: 18px; height: 18px; fill: white;"></i>
                 </a>
                 <a href="#sponsor" class="btn-hero-secondary">
@@ -313,7 +313,7 @@
         <!-- Right Visual -->
         <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
             <div class="hero-image-wrapper">
-                <img src="/extracted_images/image17.jpeg" alt="Student reading braille">
+                <img src="{{ asset(site_content('hero_image', '/extracted_images/image17.jpeg')) }}" alt="Student reading braille">
             </div>
         </div>
 
