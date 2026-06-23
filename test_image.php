@@ -1,0 +1,1 @@
+<?php require 'vendor/autoload.php'; \ = new Intervention\Image\ImageManager(new Intervention\Image\Drivers\Gd\Driver()); \ = \->decode(public_path('logo.png')); echo get_class(\->encodeUsingFileExtension('webp', 80));

@@ -2,13 +2,13 @@
     <!-- Gallery Hero -->
     <section class="gallery-hero">
         <div class="gallery-hero-bg">
-            <img src="/extracted_images/image4.jpeg" alt="Gallery Hero">
+            <img src="{{ asset(site_content('gallery_hero_image')) }}" alt="Gallery Hero">
             <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-hero-content">
             <span class="gallery-badge">Our Visual Journey</span>
-            <h1 class="gallery-title">A Picture Speaks a<br>Thousand Words</h1>
-            <p class="gallery-subtitle">Explore the moments of joy, learning, and growth captured throughout our programs.</p>
+            <h1 class="gallery-title">{!! site_content('gallery_hero_title') !!}</h1>
+            <p class="gallery-subtitle">{{ site_content('gallery_hero_subtitle') }}</p>
         </div>
     </section>
 
@@ -18,7 +18,7 @@
             <div class="masonry-grid">
                 @for ($i = 1; $i <= 48; $i++)
                     <div class="masonry-item" data-aos="fade-up" data-aos-delay="{{ ($i % 5) * 100 }}">
-                        <img src="/extracted_images/image{{ $i }}.jpeg" alt="Roshni Care Gallery Image {{ $i }}" loading="lazy">
+                        <img src="{{ asset(site_content('gallery_image_' . $i)) }}" alt="Roshni Care Gallery Image {{ $i }}" loading="lazy">
                         <div class="item-overlay">
                             <i data-lucide="zoom-in"></i>
                         </div>

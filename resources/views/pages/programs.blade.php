@@ -3,8 +3,8 @@
     <section class="programs-hero">
         <div class="programs-hero-content">
             <span class="programs-badge">Our Programs</span>
-            <h1 class="programs-title">Empowering the Future</h1>
-            <p class="programs-subtitle">Comprehensive, structured programs designed to nurture, educate, and build lifelong resilience.</p>
+            <h1 class="programs-title">{{ site_content('programs_hero_title') }}</h1>
+            <p class="programs-subtitle">{{ site_content('programs_hero_subtitle') }}</p>
         </div>
     </section>
 
@@ -18,8 +18,8 @@
                     <div class="program-icon" style="color: #2B6CB0; background: rgba(43, 108, 176, 0.1);">
                         <i data-lucide="book-open-check" style="width: 32px; height: 32px;"></i>
                     </div>
-                    <h2>Specialized Academia</h2>
-                    <p class="program-desc">A tailored curriculum focusing on tactile learning, cognitive development, and intellectual curiosity. We believe that every mind works differently, and our educators are trained to unlock the unique potential within every student.</p>
+                    <h2>{{ site_content('programs_academia_title') }}</h2>
+                    <p class="program-desc">{{ site_content('programs_academia_desc') }}</p>
                     <ul class="program-features">
                         <li><i data-lucide="check-circle-2"></i> Individualized Learning Plans</li>
                         <li><i data-lucide="check-circle-2"></i> Hands-on Tactile Workshops</li>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="program-image">
                     <div class="image-wrapper" style="border-top: 5px solid #2B6CB0;">
-                        <img src="/extracted_images/image1.jpeg" alt="Specialized Academia">
+                        <img src="{{ asset(site_content('programs_academia_image')) }}" alt="Specialized Academia">
                     </div>
                 </div>
             </div>
@@ -39,8 +39,8 @@
                     <div class="program-icon" style="color: #155D18; background: rgba(21, 93, 24, 0.1);">
                         <i data-lucide="heart-pulse" style="width: 32px; height: 32px;"></i>
                     </div>
-                    <h2>Emotional Resilience</h2>
-                    <p class="program-desc">Mental health is the foundation of a successful life. Our psychological support staff works daily with our youths to process trauma, build self-worth, and develop robust emotional coping mechanisms.</p>
+                    <h2>{{ site_content('programs_resilience_title') }}</h2>
+                    <p class="program-desc">{{ site_content('programs_resilience_desc') }}</p>
                     <ul class="program-features">
                         <li><i data-lucide="check-circle-2"></i> Group Therapy Sessions</li>
                         <li><i data-lucide="check-circle-2"></i> Art & Music Expression</li>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="program-image">
                     <div class="image-wrapper" style="border-top: 5px solid #155D18;">
-                        <img src="/extracted_images/image2.jpeg" alt="Emotional Resilience">
+                        <img src="{{ asset(site_content('programs_resilience_image')) }}" alt="Emotional Resilience">
                     </div>
                 </div>
             </div>
@@ -60,8 +60,8 @@
                     <div class="program-icon" style="color: #D69E2E; background: rgba(214, 158, 46, 0.1);">
                         <i data-lucide="compass" style="width: 32px; height: 32px;"></i>
                     </div>
-                    <h2>Tactile Independence</h2>
-                    <p class="program-desc">Preparing for the real world. We teach essential life skills—from financial literacy to vocational training—ensuring that our graduates can step into society with confidence and capability.</p>
+                    <h2>{{ site_content('programs_independence_title') }}</h2>
+                    <p class="program-desc">{{ site_content('programs_independence_desc') }}</p>
                     <ul class="program-features">
                         <li><i data-lucide="check-circle-2"></i> Vocational Training</li>
                         <li><i data-lucide="check-circle-2"></i> Financial Literacy</li>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="program-image">
                     <div class="image-wrapper" style="border-top: 5px solid #D69E2E;">
-                        <img src="/extracted_images/image3.jpeg" alt="Tactile Independence">
+                        <img src="{{ asset(site_content('programs_independence_image')) }}" alt="Tactile Independence">
                     </div>
                 </div>
             </div>
