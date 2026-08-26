@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $title ?? 'Roshni Care Home | Empower Change' }}</title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+    
     <!-- SEO Best Practices -->
     <meta name="description" content="Roshni Care Home provides education, care, and a loving home for visually impaired girls.">
     <meta property="og:title" content="{{ $title ?? 'Roshni Care Home' }}">
